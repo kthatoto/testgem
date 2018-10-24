@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
 require "testgem"
+require "bundler/setup"
 
 Testgem::CLI.start
