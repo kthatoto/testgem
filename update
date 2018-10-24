@@ -1,2 +1,5 @@
 #!/bin/bash
+git add -A
+git cm 'Added'
+git push
 gem specific_install -l https://github.com/kthatoto/testgem
