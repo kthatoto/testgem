@@ -3,7 +3,7 @@
 require "testgem"
 begin
   require "thor"
-rescue => e
+rescue LoadError => e
   puts `pwd`
 end
 
