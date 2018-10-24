@@ -1,9 +1,10 @@
 #!/usr/bin/env ruby
 
 require "testgem"
-
 begin
-  Testgem::CLI.start
+  require "thor"
 rescue => e
   puts `pwd`
 end
+
+Testgem::CLI.start
