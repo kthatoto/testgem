@@ -1,5 +1,12 @@
 require "testgem/version"
+require "thor"
 
 module Testgem
-  # Your code goes here...
+
+  class CLI < Thor
+    desc 'version', 'version'
+    def version
+      p Testgem::VERSION
+    end
+  end
 end

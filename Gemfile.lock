@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     testgem (0.1.0)
-      thor
 
 GEM
   remote: https://rubygems.org/
@@ -32,6 +31,7 @@ DEPENDENCIES
   rake (~> 10.0)
   rspec (~> 3.0)
   testgem!
+  thor
 
 BUNDLED WITH
    1.16.0
