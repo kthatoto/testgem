@@ -1,10 +1,5 @@
 #!/usr/bin/env ruby
 
 require "testgem"
-begin
-  require "thor"
-rescue LoadError => e
-  puts `pwd`
-end
 
 Testgem::CLI.start
