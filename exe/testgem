@@ -4,6 +4,6 @@ require "testgem"
 
 begin
   Testgem::CLI.start
-rescue LoadError => e
+rescue => e
   puts `pwd`
 end
