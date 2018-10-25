@@ -1,8 +1,11 @@
 require "bundler/setup"
-require "testgem/version"
+require "version"
 require "thor"
 require "sinatra"
+require "sinatra/base"
 require "sinatra/json"
+
+require "app/app"
 
 module Testgem
 
@@ -14,7 +17,7 @@ module Testgem
 
     desc 'start', 'start'
     def start
-      puts `pwd`
+      App.run! :host => 'localhost', :port => 47070
     end
   end
 end
